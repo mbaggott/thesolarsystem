@@ -1,0 +1,110 @@
+/* Font Face Reference: http://css-tricks.com/snippets/css/using-font-face/ */
+@font-face {
+    font-family: 'Nasalization';
+	src: 	url('../fonts/Nasalization.eot?') format('embedded-opentype'),
+			url('../fonts/Nasalization.ttf')  format('truetype'); /* IE9 Compat Modes */
+	src: 	url('../fonts/Nasalization.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/Nasalization.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/Nasalization.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html {
+  height: 100%;
+}
+
+/* General inline styling to apply to divs */
+.inline {
+	display: inline-block;
+}
+
+/* Remove underlines from all links */
+a {
+	text-decoration: none;
+}
+
+/* Navigation Menu Tooltips */
+.navMenuHover {
+	display: none;
+	position: absolute;
+	top: 46px;
+	background: #C8C8C8;
+    margin-left: 28px;
+    padding: 2px;
+    z-index: 1000;
+	color: black;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/** FOOTER **/
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 80px;
+	background-color: #504F4F;
+	padding: 5px;
+	border-top: solid 2px #000000;
+}
+
+.mapHolder {
+	padding-left: 10%;
+	width: 10%;
+	vertical-align: top;
+}
+
+.mapHeading {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	text-decoration: underline;
+	padding: 2px;
+}
+
+.mapHome {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-left: 5px;
+}
+
+.mapHome:hover {
+	color: white;
+}
+
+.map {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-left: 10px;
+}
+
+.map:hover {
+	color: white;
+}
+
+.disclaimer {
+	font-size: 10px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	word-wrap: break-word;
+	
+}
+
+.copyrightHolder {
+	width: 70%;
+	padding-left: 20px;
+}
+
+.nameHolder {
+	width: 100%;
+	text-align: right;
+}
+
+.copyright {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #2F2F2F;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "description" content = "Welcome to The Solar System Homepage. An interactive and educational website based on the planets revolving around our Sun." />
+		<title>
+			The Solar System - Homepage
+		</title>	
+	  
+		<link rel="stylesheet" type="text/css" href="css/plugins/accordionSlider/accordion-slider.min.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/plugins/accordionSlider/accordionSlider.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/cssReset.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/plugins/accordionSlider/jquery.accordionSlider.js"></script>
+			
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+		<!-- BEGIN REFERENCE -->
+		<!-- 	Accordion Slider - Response and Touch Accordion 2014, "Envato Market" Accessed 3 October 2014
+				http://codecanyon.net/item/accordion-slider-responsive-and-touch-accordion/140404 -->
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				// instantiate the accordion
+				$('#example1').accordionSlider({
+					width: 960,
+					height: 500,
+					responsiveMode: 'auto',
+					openedPanelSize: 'max',
+					maxOpenedPanelSize: '80%',
+					visiblePanels: 3,
+					closePanelsOnMouseOut: false,
+					autoplay: true
+				});
+
+				// change the responsive mode
+				$('.controls a').click(function(event) {
+					event.preventDefault();
+
+					if ($(this).hasClass('auto')) {
+						// change the responsive mode to 'auto' and remove the 'custom-responsive' class
+						$('#example1').removeClass('custom-responsive');
+						$('#example1').accordionSlider('responsiveMode', 'auto');
+
+						// change the arrows' visibility
+						$('.auto-arrow').show();
+						$('.custom-arrow').hide();
+					} else if ($(this).hasClass('custom')) {
+						// change the responsive mode to 'custom' and add the 'custom-responsive' 
+						// class in order to use it as a reference in the CSS code
+						$('#example1').addClass('custom-responsive');
+						$('#example1').accordionSlider('responsiveMode', 'custom');
+
+						// change the arrows' visibility
+						$('.custom-arrow').show();
+						$('.auto-arrow').hide();
+					}
+				});
+			});
+		</script>
+		<!-- END REFERENCE -->
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+
+
+
+
+	
+	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKJK7PJ0VH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-FKJK7PJ0VH');
+	</script>
+  
+	<body>
+
+		<div class = "container">
+		
+		<div class = "header">
+			<div id = "indexTitle">The Solar System</div>	
+		
+			<div id = "introContainer">
+				<section id = "introduction">
+					<article class = "introPanel">
+						Welcome to The Solar System, a site that will give you a brief tour of the Earths' Sun and surrounding planets. Explore the space around Earth beginning with the Interplanetary Distance Calculator, select any two planets here and in seconds, measure the distance between them. Then discover a simulation of the orbit of the planets around the Sun. The orbits are displayed at a proportionally correct speed, showing you the differences between the speed of the planets revolving around the Sun. Finally move to the Gallery, where you will be treated to a spectacular view of space themed events and sights.
+					</article>	
+				</section>
+			</div>
+		</div>
+		
+		<div class = "body">
+		
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+		<!-- BEGIN REFERENCE -->
+		<!-- 	Accordion Slider - Response and Touch Accordion 2014, "Envato Market" Accessed 3 October 2014
+				http://codecanyon.net/item/accordion-slider-responsive-and-touch-accordion/140404 
+				Some parts of this plugin have been customised including images, title tabs and colours, links, and page descriptions.-->
+		
+		<div id="example1" class="accordion-slider">
+			<div class="as-panels">
+
+				<!-- Panel 1 -->
+				<div class="as-panel">
+					<a href="solarsystem.html">
+						<img class="as-background" src="images/accordionSlider/blank.gif" alt = "FillingInForPlugin" data-src="images/solar_system.jpg" data-retina="images/solar_system.jpg"/>
+					</a>
+
+					<div class="textPanel as-layer as-closed as-white panel-counter" 
+						 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+						 Calculator
+					</div>
+					
+					<a href="solarsystem.html">
+						<h3 class="textPanel as-layer as-opened as-white as-padding" 
+							data-horizontal="40" data-vertical="10%" 
+							data-show-transition="left" data-hide-transition="left">
+							Interplanetary Distance Calculator
+						</h3>
+						<p class="textContent as-layer as-opened as-black as-padding hide-small-screen" 
+							data-horizontal="40" data-vertical="24%" data-width="350" 
+							data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
+							Visit this page for a spin around the Solar System that will calculate your distances travelled as you go. Set your starting point and destination as you see fit!
+						</p>
+					</a>
+				</div>
+
+				<!-- Panel 2 -->
+				<div class="as-panel">
+					<a href="orbit.html">
+						<img class="as-background" src="images/accordionSlider/blank.gif" alt = "FillingInForPlugin" data-src="images/orbit.jpg" data-retina="images/orbit.jpg"/>
+					</a>
+
+					<div class="textPanel as-layer as-closed as-white panel-counter"
+						 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+						 Orbit
+					</div>
+					
+					<a href="orbit.html">
+						<h3 class="textPanel as-layer as-opened as-white as-padding" 
+							data-horizontal="40" data-vertical="10%" 
+							data-show-transition="left" data-hide-transition="left">
+							Orbit of Planets
+						</h3>
+						<p class="textContent as-layer as-opened as-black as-padding hide-small-screen" 
+							data-horizontal="40" data-vertical="24%" data-width="350" 
+							data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
+							A simulated orbit of the planets around the sun in a proportionally accurate representation of the speeds that the planets orbit. Select a planet to see its position in the Solar System, and get some orbital facts!
+						</p>
+					</a>
+				</div>
+
+				<!-- Panel 3 -->
+				<div class="as-panel">
+					<a href="gallery.html">
+						<img class="as-background" src="images/accordionSlider/blank.gif" alt = "FillingInForPlugin" data-src="images/gallery.jpg" data-retina="images/gallery.jpg"/>
+					</a>
+
+					<div class="textPanel as-layer as-closed as-white panel-counter"
+						 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+						 Gallery
+					</div>
+					
+					<a href="gallery.html">
+						<h3 class="textPanel as-layer as-opened as-white as-padding" 
+							data-horizontal="40" data-vertical="10%" 
+							data-show-transition="left" data-hide-transition="left">
+							Photo Gallery
+						</h3>
+					
+						<p class="textContent as-layer as-opened as-black as-padding hide-small-screen" 
+							data-horizontal="40" data-vertical="24%" data-width="350" 
+							data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
+							A mesmerising gallery of interesting sights in our Solar System. From Earth, to Saturn, to the beautiful Aurora Borealis, see the image alone or keep the mouse moving to discover some interesting facts.
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- END REFERENCE -->
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+		
+		</div>
+		
+	<footer class = "footer">
+		<div class = "mapHolder inline">
+			<div class = "mapHeading">Sitemap</div>
+			<a href = "index.html"><div class = "mapHome">Homepage</div></a>
+			<a href = "solarsystem.html"><div class = "map">Solar System</div></a>
+			<a href = "orbit.html"><div class = "map">Solar Orbit</div></a>
+			<a href = "gallery.html"><div class = "map">Gallery</div></a>
+		</div>
+		<div class = "inline copyrightHolder">
+			<div class = "disclaimer">This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+			</div>
+			<div class = "nameHolder">
+				<div class = "copyright"><br/>&copy; Michael Baggott 2014</div>
+			</div>
+		</div>
+	</footer>
+	
+	</div>
+	
+	</body>
+
+</html>

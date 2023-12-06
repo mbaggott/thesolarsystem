@@ -1,0 +1,39 @@
+/** General **/
+/*************/
+
+body {
+  height: 100%;
+  color: #eee;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+/** Navigation menu **/
+/*********************/
+
+.navImage {
+	margin-left: 5px;
+	
+}
+
+#selected2 {
+	opacity: 0.5;
+}
+	
+#navmenu {
+	position: absolute;
+	top: 76px;
+	z-index:1000;
+	right: calc(3% + 15px);
+}
+
+/** Custom CSS for gallery - text caption **/
+/*******************************************/
+
+#slidecaption {
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+}
+

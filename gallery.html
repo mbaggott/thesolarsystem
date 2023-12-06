@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+		
+			<meta charset="utf-8" />
+			<title>
+				The Solar System - Photo Gallery
+			</title>	
+	  
+			<link href="css/gallery.css" rel="stylesheet" type="text/css" />
+			<link href="css/cssReset.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+			<link rel="stylesheet" href="css/plugins/supersized/supersized.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="css/plugins/supersized/supersized.shutter.css" type="text/css" media="screen" />
+		
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/gallery.js"></script>
+			<script type="text/javascript" src="js/plugins/supersized/jquery.easing.min.js"></script>
+			<script type="text/javascript" src="js/plugins/supersized/supersized.3.2.7.js"></script>
+			<script type="text/javascript" src="js/plugins/supersized/supersized.shutter.js"></script>
+		
+			<!-- ********************************************************************************************** -->
+			<!-- ********************************************************************************************** -->
+			<!-- BEGIN REFERENCE -->
+			<!-- 
+			Supersized - Fullscreen Slideshow jQuery Plugin
+			Version : 3.2.7
+			Site	: www.buildinternet.com/project/supersized
+			
+			Author	: Sam Dunn
+			Company : One Mighty Roar (www.onemightyroar.com)
+			License : MIT License / GPL License 
+			some sections modified/customised by Michael Baggott, these sections are commented to that effect -->
+		
+			<script type="text/javascript">
+			
+				jQuery(function($){
+				
+					$.supersized({
+				
+						// Functionality
+						slide_interval          :   3000,		// Length between transitions
+						transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+						transition_speed		:	700,		// Speed of transition
+															   
+						// Components							
+						slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+						slides 					:  	[			// Slideshow Images
+															/* REFERENCE: http://paulbourke.net/miscellaneous/starfield/ */
+															// {image : 'images/galleryIntro2.jpg', title : "", thumb : '', url : ''},
+															/* REFERENCE: http://www.northernlightscentre.ca/northernlights.html */
+															{image : 'images/aurora_borealis_resized.jpg', title : "Aurora Borealis: <br/><br/> The bright dancing lights of the aurora are actually collisions between electrically charged particles from the sun that enter the earth's atmosphere. The lights are seen above the magnetic poles of the northern and southern hemispheres. They are known as 'Aurora borealis' in the north and 'Aurora australis' in the south.", thumb : '', url : ''},
+															/* REFERENCE: http://www.space.com/58-the-sun-formation-facts-and-characteristics.html **/
+															{image : 'images/sun_erupting_resized.jpg', title : "Solar Flare: <br/><br/> Though the sun lies 93 million miles (149 million km) from Earth, its unceasing activity assures an impact on our planet far beyond the obvious light and heat. From a constant stream of particles in the form of solar wind to the unpredictable bombardment from solar flares and coronal mass ejections, Earth often feels the effects of its stellar companions.", thumb : '', url : ''},
+															/* REFERENCE: http://www.universetoday.com/22285/facts-about-the-milky-way/ */
+															{image : 'images/milky_way_resized.jpg', title : "The Milky Way: <br/><br/> As galaxies go, the Milky Way is a middleweight. The largest galaxy known, IC 1101, has over 100 trillion stars, and other large galaxies can have more than a trillion stars. Smaller galaxies like the aforementioned Large Magellanic Cloud, have about 10 billion stars. The Milky Way has between 200-400 billion stars, but when you look up into the night sky the most you can see from any one point on the Earth is about 2,500.", thumb : '', url : ''},  
+															/* REFERENCE: http://www.space.com/19878-halleys-comet.html */
+															{image : 'images/halleys_comet_resized.jpg', title : "Halley's Comet: <br/><br/> Halley's Comet is arguably the most famous comet. It is a 'periodic' comet and returns to Earth's vicinity about every 75 years, making it possible for a human to see it twice in his or her lifetime. The last time it was here was in 1986, and it is projected to return in 2061. The comet is named after English astronomer Edmond Halley, who examined reports of a comet approaching Earth in 1531, 1607 and 1682.", thumb : '', url : ''},
+															/* REFERENCE: http://space-facts.com/earth/ */
+															{image : 'images/earth_from_space_resized.jpg', title : "Planet Earth: <br/><br/> Earth is the third planet from the Sun and is the largest of the terrestrial planets. Unlike the other planets in the solar system that are named after classic deities the Earth’s name comes from the Anglo-Saxon word erda which means ground or soil. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.", thumb : '', url : ''},
+															/* REFERENCE: http://space-facts.com/the-moon/ */
+															{image : 'images/moon-surface_resized.jpg', title : "The Moon: <br/><br/> The Moon (or Luna) is the Earth’s only natural satellite and was formed 4.6 billion years ago around some 30–50 million years after the formation of the solar system. The Moon is in synchronous rotation with Earth meaning the same side is always facing the Earth. The first unmanned mission to the Moon was in 1959 by the Soviet Lunar Program with the first manned landing being Apollo 11 in 1969.", thumb : '', url : ''},
+															/* REFERENCE: https://solarsystem.nasa.gov/planets/profile.cfm?Object=Saturn&Display=Rings */
+															{image : 'images/saturns_rings_resized.jpg', title : "Saturn: <br/><br/> The rings of Saturn have puzzled astronomers since Galileo Galilei discovered them with his telescope in 1610. Detailed study by the Voyager 1 and Voyager 2 spacecraft in the 1980s only increased the mystery. The rings are believed to be pieces of comets, asteroids or shattered moons that broke up before they reached the planet. Each ring orbits at a different speed around the planet.", thumb : '', url : ''},
+															/* REFERENCE: http://www.armaghplanet.com/blog/nasas-lunar-rover-everything-you-need-to-know.html */
+															{image : 'images/apollo17_lunar_roving_resized.jpg', title : "Lunar Rover: <br/><br/>Measuring 3.1m by 2.3m (wheelbase), three Lunar Rovers were used to ferry scientific equipment, tools, life support consumables, lunar rock samples, and up to two occupants on their Extra-Vehicular Activities over a total of 90km of the Moon’s surface. The tool caddy was furnished with: a hammer, a sampling scoop, a brush, and a rake.", thumb : '', url : ''}
+													]
+					
+					});
+				});
+		    
+			</script>
+		
+			<style type="text/css">
+				ul#demo-block{ margin:0 15px 15px 15px; }
+				ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('images/supersized/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+				ul#demo-block li a{ color:#eee; font-weight:bold; }
+			</style>
+	
+		</head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKJK7PJ0VH"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-FKJK7PJ0VH');
+		</script>
+			 
+		<body>
+	
+			<!-- Navigation Menu by Michael Baggott (Custom code)-->
+			<nav id = "navmenu">
+				<a href = "index.html"><img class = "navImage menuHome" src = "images/home_resized.png" alt = "black and white home icon" width = "30" height = "30" /></a>
+				<a href = "solarsystem.html"><img class = "navImage distanceHome" src = "images/distance_resized.png" alt = "black and white planetary distance icon" width = "30" height = "30" /></a>
+				<a href = "orbit.html"><img class = "navImage orbitHome" src = "images/orbit_resized.png" alt = "black and white solar orbit icon" width = "30" height = "30" /></a>
+				<img id = "selected2" class = "navImage galleryHome" src = "images/gallery_resized.png" alt = "black and white gallery icon" width = "30" height = "30" />
+			</nav>
+			<span class="navMenuHover menuHomeHover">Home</span>
+			<span class="navMenuHover menuDistanceHover">Distance Calculator</span>
+			<span class="navMenuHover menuOrbitHover">The Solar Orbit</span>
+			<span class="navMenuHover menuGalleryHover">Gallery</span> 
+	
+			<div id="slidecaption">	</div>
+    
+			<!--Thumbnail Navigation-->
+			<div id="prevthumb"></div>
+			<div id="nextthumb"></div>
+	
+			<!--Arrow Navigation-->
+			<a id="prevslide" class="load-item"></a>
+			<a id="nextslide" class="load-item"></a>
+	
+			<div id="thumb-tray" class="load-item">
+				<div id="thumb-back"></div>
+				<div id="thumb-forward"></div>
+			</div>
+	
+			<!--Time Bar-->
+			<div id="progress-back" class="load-item">
+				<div id="progress-bar"></div>
+			</div>
+	
+			<!--Control Bar-->
+			<div id="controls-wrapper" class="load-item">
+				<div id="controls">
+			
+					<a id="play-button"><img id="pauseplay" src="images/supersized/pause.png" alt = "AddingForPlugin" /></a>
+		
+					<!--Slide counter-->
+					<div id="slidecounter">
+						<span class="slidenumber"></span> / <span class="totalslides"></span>
+					</div>
+			
+					<!--Slide captions displayed here-->
+			
+					<!--Thumb Tray button-->
+					<a id="tray-button"><img id="tray-arrow" src="images/supersized/button-tray-up.png" alt = "AddingForPlugin" /></a>
+			
+					<!--Navigation-->
+					<ul id="slide-list"></ul>
+				</div>
+			</div>
+	
+		<!-- END REFERENCE -->
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+	
+	</body>
+
+</html>

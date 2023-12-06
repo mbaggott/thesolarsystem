@@ -1,0 +1,418 @@
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* Internet Explorer 9 and below Stylesheet */
+
+/** General **/
+/*************/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: #eee;
+  background-image: url('../images/stars.jpg');
+  margin: 0;
+  min-width: 1024px;
+}
+
+#wrap {
+  width: 980px; /* fixed width, centered in viewport */
+  height: 600px;
+  left: -490px;
+  margin-left: 50%;
+  position: relative;
+}
+
+#wrap > h1 {
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 3px;
+  margin: 26px auto;
+}
+
+footer {
+  display: block;
+  position: relative;
+}
+
+.inline {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+#introContainer {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#introduction {
+	text-align: left;
+}
+
+.introPanel {
+	width: 700px;
+	background-color: rgba(69,119,212, 0.4);
+	border: 2px solid #6B90D4;
+	font-size: 14px;
+	padding: 5px;
+	padding: 7px;
+	opacity: 1;
+	color: white;
+	font-family: 'Oswald', "Lucida Grande", sans-serif;
+	font-size: 120%;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+}
+
+/**************************************************************************/
+/** CSS for Solar Orbit - created by Website Author Michael Baggott 2014 **/
+
+/*Styling for Title */
+#orbitTitle {
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	color: #BEC5D6;
+	font-family: Nasalization, "Lucida Grande",  sans-serif;
+	font-size: 250%;
+	padding-top: 20px;
+}
+
+/* Styling textual list of planets */
+.planetList {
+	display: none;
+	position: absolute;
+	top: 80px;
+	background-color: rgb(69,119,212);
+	padding: 20px;
+	padding-top: 35px;
+	height: 340px;
+	width: 115px;
+	border: 2px solid #6B90D4;
+}
+
+/* Styling for pause button */
+#pauseplay {
+	position: absolute;
+	top: 84px;
+	left: 165px;
+	cursor: pointer;
+}
+
+/* Styling for reset button */
+#reset {
+	position: absolute;
+	top: 84px;
+	left: 195px;
+	cursor: pointer;
+}
+
+/* Styling for hide/show icon */
+#showIcon {
+	position: absolute;
+	top: 84px;
+	left: 127px;
+	cursor: pointer;
+}
+
+/* Styling for planet number and name in textual planet list */
+.planetNumber, .planet {
+	padding: 7px;
+	color: white;
+	font-family: 'Oswald', "Lucida Grande", sans-serif;
+}
+
+/* Styling for planet in textual planet list */
+.planet {
+	cursor: pointer;
+}
+
+/* Styling for planet number in textual planet list */
+.planetNumber {
+	border: 1px solid white;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* Styling for the higlighting of a revolving planet when selecting planet name in textual list */
+.planetHighlighted {
+	border: 1px solid yellow;
+}
+
+/* Styling for hand and click icons on textual planet list */
+#handIcon {
+	display: none;
+	position: absolute;
+	top: 84px;
+	left: 4px;
+}
+
+#clickIcon {
+	display: none;
+	position: absolute;
+	top: 84px;
+	left: 34px;
+}
+
+/* Styling for tooltips */
+.handTooltip {
+	display: none;
+	background: #C8C8C8;
+    margin-left: 28px;
+    padding: 2px;
+    position: absolute;
+	top: 52px;
+	left: -30px;
+    z-index: 1000;
+	color: black;
+}	
+
+.clickTooltip {
+	display: none;
+	background: #C8C8C8;
+    margin-left: 28px;
+    padding: 2px;
+    position: absolute;
+	top: 52px;
+    z-index: 1000;
+    color: black;
+}
+
+#showIconPanel {
+	display: none;
+	position: absolute;
+	top: 84px;
+	left: 128px;
+	cursor: pointer;
+}
+
+.panel {
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 320px;
+	width: 180px;
+	background-color: rgb(69,119,212);
+	border: 2px solid #6B90D4;
+	font-size: 14px;
+	padding: 5px;
+}
+
+
+/** END CSS for Solar Orbit - created by Website Author Michael Baggott 2014 **/
+/******************************************************************************/
+
+/* Navigation Menu */
+
+.navImage {
+	margin-left: 5px;
+	
+}
+
+#navmenu {
+	position: absolute;
+	right: 3%;
+	top: 76px;
+	z-index:10;
+}
+
+/** WRAPPER CONTAINER **/
+.container {
+	min-height: 100%;
+	position: relative;	
+}
+
+/** PAGE CONTENT **/
+.body {
+	padding-bottom: 80px;
+	min-height: 720px;
+}
+
+/** FOOTER **/
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 80px;
+	background-color: #504F4F;
+	padding: 5px;
+	border-top: solid 2px #000000;
+}
+
+.mapHolder {
+	padding-left: 10%;
+	width: 10%;
+	vertical-align: top;
+}
+
+.mapHeading {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	text-decoration: underline;
+	padding: 2px;
+}
+
+.mapHome {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-left: 5px;
+}
+
+.mapHome:hover {
+	color: white;
+}
+
+.map {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-left: 10px;
+}
+
+.map:hover {
+	color: white;
+}
+
+.disclaimer {
+	font-size: 10px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #B2B2B2;
+	
+}
+
+.copyrightHolder {
+	width: 70%;
+	padding-left: 20px;
+}
+
+.nameHolder {
+	width: 100%;
+	text-align: right;
+}
+
+.copyright {
+	font-size: 12px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #2F2F2F;
+}
+/** END FOOTER **/
+
+/** Styling for planets in Solar Orbit **/
+/** Initital position styling **/
+.sunCenter {
+	position: absolute;
+	left: 465px;
+	top: 245px;		
+}
+
+/***** POSITION OF PLANETS ******/
+/* IE9 Only */
+/* Note: Commented centre positions have been left in for reference */
+
+/*.earthCenter {
+	position: absolute;
+	left: 488px;
+	top: 268px;
+}*/
+
+.earthCenter {
+	position: absolute;
+	left: 563px;
+	top: 288px;
+}
+
+/*.mercuryCenter {
+	position: absolute;
+	left: 493px;
+	top: 273px;
+}*/
+
+.mercuryCenter {
+	position: absolute;
+	left: 533px;
+	top: 233px;
+}
+
+/*.venusCenter {
+	position: absolute;
+	left: 488px;
+	top: 268px;
+}*/
+
+.venusCenter {
+	position: absolute;
+	left: 428px;
+	top: 228px;
+}
+
+/*.marsCenter {
+	position: absolute;
+	left: 491px;
+	top: 271px;
+}*/
+
+.marsCenter {
+	position: absolute;
+	left: 391px;
+	top: 301px;
+}
+
+/*.jupiterCenter {
+	position: absolute;
+	left: 481px;
+	top: 261px;
+}*/
+
+.jupiterCenter {
+	position: absolute;
+	left: 421px;
+	top: 361px;
+}
+
+/*.saturnCenter {
+	position: absolute;
+	left: 484px;
+	top: 264px;
+}*/
+
+.saturnCenter {
+	position: absolute;
+	left: 659px;
+	top: 239px;
+}
+
+/*.uranusCenter {
+	position: absolute;
+	left: 486px;
+	top: 266px;
+}*/
+
+.uranusCenter {
+	position: absolute;
+	left: 401px;
+	top: 80px;
+}
+
+/*.neptuneCenter {
+	position: absolute;
+	left: 487px;
+	top: 267px;
+}*/
+
+.neptuneCenter {
+	position: absolute;
+	left: 287px;
+	top: 117px;
+}

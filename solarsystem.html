@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "description" content = "Welcome to the Interplanetary Distance Calculator. An interactive feature that caclulates the distances between planets." />
+		<title>Interplanetary Distance Calculator</title>
+		<link href="css/solarsystem.css" rel="stylesheet" type = "text/css">
+		<link href="css/cssReset.css" rel="stylesheet" type = "text/css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/plugins/cloud9/cloud9.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+		<script src = "https://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script src = "js/solarsystem.js"></script>
+		<script src = "js/plugins/carousel/jquery.reflection.js"></script>
+		<script src = "js/plugins/carousel/jquery.cloud9carousel.js"></script>
+	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKJK7PJ0VH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-FKJK7PJ0VH');
+	</script>
+	
+	<body>
+	
+	<div class = "container">
+		
+		<!-- Navigation Menu -->
+		<nav id = "navmenu">
+			<!-- Home Image: http://www.gopixpic.com/512/website-home-icon-png-web-design/http:%7C%7Cwww*jacobsagencytn*com%7Cwp-content%7Cuploads%7C2014%7C04%7C512px-Home_Icon*svg_*png/ -->
+			<a href = "index.html"><img class = "navImage menuHome" src = "images/home_resized.png" alt = "black and white home icon" width = "30" height = "30" /></a>
+			<!-- Distance Image: https://www.iconfinder.com/search/?q=distance -->
+			<img id = "selected" class = "navImage distanceHome" src = "images/distance_resized.png" alt = "black and white planetary distance icon" width = "30" height = "30" />
+			<!-- Orbit Image - custom designed and made -->
+			<a href = "orbit.html"><img class = "navImage orbitHome" src = "images/orbit_resized.png" alt = "black and white solar orbit icon" width = "30" height = "30" /></a>
+			<!-- Gallery Image: http://simpleicon.com/camera.html -->
+			<a href = "gallery.html"><img class = "navImage galleryHome" src = "images/gallery_resized.png" alt = "black and white gallery icon" width = "30" height = "30" /></a>
+		</nav>
+		<span class="navMenuHover menuHomeHover">Home</span>
+		<span class="navMenuHover menuDistanceHover">Distance Calculator</span>
+		<span class="navMenuHover menuOrbitHover">The Solar Orbit</span>
+		<span class="navMenuHover menuGalleryHover">Gallery</span> 
+		
+		<div class = "body">
+		
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+		<!-- BEGIN REFERENCE -->
+		<!-- 	3D Cover Flow-Style Image Carousel Plugin with jQuery - Cloud 9 Carousel 2014, "jQuery script.net" Accessed 3 October 2014
+				http://www.jqueryscript.net/slider/3D-Cover-Flow-Style-Image-Carousel-Plugin-with-jQuery-Cloud-9-Carousel.html
+				Heavily modified for customisation - custom sections noted in comments-->
+		
+		<div id="wrap">
+			<div id = "header">
+				<div id = "solarsystemTitle">Interplanetary<br/>Distance Calculator</div>	
+			</div>
+			
+			<div id="showcase" class="noselect">
+				<!-- Customised with selected images -->
+				
+				<!-- Sun Image: http://www.iconarchive.com/show/solar-system-icons-by-dan-wiersma/Sun-icon.html -->
+				<img class = "cloud9-item" src = "images/planets/sun_resized.png" alt = "The Sun" width = "260" height = "260" />
+
+				<img class = "cloud9-item" src = "images/planets/blank.png" alt = "" width = "200" height = "200" />
+				
+				<!-- Neptune Image: http://s803.photobucket.com/user/krmitchell13/media/planet%20pictures/neptune.png.html -->
+				<img class = "cloud9-item" src = "images/planets/neptune_resized.png" alt = "Neptune" width = "200" height = "200" />
+				<!-- Uranus Image: http://jalilmajullifeisart.blogspot.com.au/2012/06/after-effects-composition.html -->
+				<img class = "cloud9-item" src = "images/planets/uranus_resized.png" alt = "Uranus" width = "200" height = "200" />
+				<!-- Saturn Image: http://spaceplace.nasa.gov/ -->
+				<img class = "cloud9-item" src = "images/planets/saturn_resized.png" alt = "Saturn" width = "352" height = "200">
+				<!-- Jupiter Image: http://commons.wikimedia.org/wiki/File:Jupiter.png -->
+				<img class = "cloud9-item" src = "images/planets/jupiter_resized.png" alt = "Jupiter" width = "200" height = "200">
+				<!-- Mars Image: http://www.macweb.sk/preskumajte-planetu-mars-so-svojim-iphonom/mars/ -->
+				<img class = "cloud9-item" src = "images/planets/mars_resized.png" alt = "Mars" width = "200" height = "200">
+				<!-- Earth Image: http://xenosaga.wikia.com/wiki/File:Earth.png -->
+				<img class = "cloud9-item" src = "images/planets/earth_resized.png" alt = "Earth" width = "200" height = "200">
+				<!-- Venus Image: http://ciera.northwestern.edu/news/news_2011-2012.php -->
+				<img class = "cloud9-item" src = "images/planets/venus_resized.png" alt = "Venus" width = "200" height = "200">
+				<!-- Mercury Image: http://www.heywhatsthat.com/images/planets/1000/mercury.png -->
+				<img class = "cloud9-item" src = "images/planets/mercury_resized.png" alt = "Mercury" width = "200" height = "200">
+				<article class = "introPanel">
+					You have landed at the Interplanetary Distance Calculator. Select a planet to take off from, then a planet to land at. You will be propelled there instantly, and a distance in Kilometres of your journey will be recorded. Select another planet to take another journey from this location, or select the reset destination to have your flight path calculations start over.
+				</article>	
+			
+			</div>
+			<div id="nav" class="noselect">
+				<button class="left">←</button>
+				<button class="right">→</button>
+				<!-- Customised distance element -->
+				<div id = "distance">
+					<div id = "distHeading" class = "inline distance">Distance Travelled:</div><div id = "kilometres" class = "inline distance"></div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<!-- Customised footer -->
+			<footer id = "footer">
+				<div class = "fromto inline">From:&nbsp;</div><div class = "inline" id="from-title"></div><div class = "fromto inline">To:&nbsp;</div><p class = "inline" id="item-title"></p>
+			</footer>
+		
+		<!-- Fully custom hidden table with data for planet distances from sun -->
+		<!-- REFERENCE: http://idahoptv.org/ntti/nttilessons/lessons2000/lau1.html -->
+		
+		</div> 
+		
+		<div id = "distanceTable">
+			<div id = "km0">0</div><div id = "au0">0</div>
+			<div id = "km1">57910000</div><div id = "au1">0.387</div>
+			<div id = "km2">108200000</div><div id = "au2">0.723</div>
+			<div id = "km3">149600000</div><div id = "au3">1.000</div>
+			<div id = "km4">227940000</div><div id = "au4">1.524</div>
+			<div id = "km5">778330000</div><div id = "au5">5.203</div>
+			<div id = "km6">1424600000</div><div id = "au6">9.523</div>
+			<div id = "km7">2873550000</div><div id = "au7">19.208</div>
+			<div id = "km8">4501000000</div><div id = "au8">30.087</div>
+		</div>
+		
+		<!-- END REFERENCE -->
+		<!-- ********************************************************************************************** -->
+		<!-- ********************************************************************************************** -->
+			
+		
+		<footer class = "footer">
+			<div class = "mapHolder inline">
+				<div class = "mapHeading">Sitemap</div>
+				<a href = "index.html"><div class = "mapHome">Homepage</div></a>
+				<a href = "solarsystem.html"><div class = "map">Solar System</div></a>
+				<a href = "orbit.html"><div class = "map">Solar Orbit</div></a>
+				<a href = "gallery.html"><div class = "map">Gallery</div></a>
+			</div>
+			<div class = "inline copyrightHolder">
+				<div class = "disclaimer">This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+				</div>
+				<div class = "nameHolder">
+					<div class = "copyright"><br/>&copy; Michael Baggott 2014</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "description" content = "Welcome to The Solar Orbit page. An interactive and educational tool that shows a lifelike orbit of the planets, with additional information on each planet." />
+		<title>Solar Orbit Simulation</title>	
+	  	
+		<!--[if IE 9]>
+			<link href="css/orbit-IE9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<!--[if !IE]> -->
+			<link href="css/orbit.css" rel="stylesheet" type="text/css" />
+		<!-- <![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<link href="css/cssReset.css" rel="stylesheet" type="text/css" />
+		<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+		<script src = "https://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script src = "js/orbit.js"></script>
+	
+	
+	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKJK7PJ0VH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-FKJK7PJ0VH');
+	</script>
+  
+	<body>
+	
+	<div class = "container">
+    
+		<!-- Navigation Menu -->
+		<nav id = "navmenu">
+			<!-- Home Image: http://www.gopixpic.com/512/website-home-icon-png-web-design/http:%7C%7Cwww*jacobsagencytn*com%7Cwp-content%7Cuploads%7C2014%7C04%7C512px-Home_Icon*svg_*png/ -->
+			<a href = "index.html"><img class = "navImage menuHome" src = "images/home_resized.png" alt = "black and white home icon" width = "30" height = "30" /></a>
+			<!-- Distance Image: https://www.iconfinder.com/search/?q=distance -->
+			<a href = "solarsystem.html"><img class = "navImage distanceHome" src = "images/distance_resized.png" alt = "black and white planetary distance icon" width = "30" height = "30" /></a>
+			<!-- Orbit Image - custom designed and made -->
+			<img id = "selected" class = "navImage orbitHome" src = "images/orbit_resized.png" alt = "black and white solar orbit icon" width = "30" height = "30" />
+			<!-- Gallery Image: http://simpleicon.com/camera.html -->
+			<a href = "gallery.html"><img class = "navImage galleryHome" src = "images/gallery_resized.png" alt = "black and white gallery icon" width = "30" height = "30" /></a>
+		</nav>
+		<span class="navMenuHover menuHomeHover">Home</span>
+		<span class="navMenuHover menuDistanceHover">Distance Calculator</span>
+		<span class="navMenuHover menuOrbitHover">The Solar Orbit</span>
+		<span class="navMenuHover menuGalleryHover">Gallery</span>
+		
+		<div id = "header">
+			<div id = "orbitTitle">Solar Orbit of Planets</div>	
+		</div>
+		
+		<div id = "introContainer">
+			<section id = "introduction">
+				<article class = "introPanel">
+					Here you will find a lifelike simulation of the orbit of the planets in our Solar System. The speed at which the planets are depicted rotating here is a proportional representation of the speed at which they orbit in real life. Select play to begin the simulation. Reveal the planet list then select a planet to see it's location in the Solar System, and get some more information about its orbit.
+				</article>	
+			</section>
+		</div>
+		
+		<div class = "body">
+		
+		<article id="wrap">
+			
+			<!-- Solar Orbit, Designed and created by website author, Michael Baggott 2014. Images used are referenced at point of use -->
+			<div id = "solarWrap">
+				<img id = "pauseplay" src = "images/pauseplay_resized.png" alt = "Red Pause/Play button" width = "25" height = "25" >
+				<img id = "reset" src = "images/reset_resized.png" alt = "Red Reset button" width = "25" height = "25" >
+				<img id = "showIcon" src = "images/hideshow_resized.png" alt = "Click Icon - indicates a hover action for the list of planets" width = "25" height = "25" />
+				<aside id = "planetList" class = "planetList">
+					<div>
+						<div class = "inline planetNumber">1</div><div  id = "sunText" class = "inline planet">The Sun</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">2</div><div  id = "mercuryText" class = "inline planet">Mercury</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">3</div><div  id = "venusText" class = "inline planet">Venus</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">4</div><div  id = "earthText" class = "inline planet">Earth</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">5</div><div  id = "marsText" class = "inline planet">Mars</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">6</div><div  id = "jupiterText" class = "inline planet">Jupiter</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">7</div><div  id = "saturnText" class = "inline planet">Saturn </div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">8</div><div id = "uranusText" class = "inline planet">Uranus</div>
+					</div>
+					<div>
+						<div class = "inline planetNumber">9</div><div  id = "neptuneText" class = "inline planet">Neptune</div>
+					</div>
+				</aside>
+			
+				<img id = "handIcon" src = "images/hand_cursor2_resized.png" alt = "Hand Icon - indicates a hover action for the list of planets" width = "25" height = "25" />
+				<span class="handTooltip">Hover over a planet name!</span>
+				<img id = "clickIcon" src = "images/click_cursor2-resized.png" alt = "Click Icon - indicates a hover action for the list of planets" width = "25" height = "25" />
+				<span class="clickTooltip">Click on a planet name!</span>
+				<img id = "showIconPanel" src = "images/hideshow_resized.png" alt = "Click Icon - indicates a hover action for the list of planets" width = "25" height = "25" />
+			
+				<!-- Sun Image: http://www.iconarchive.com/show/solar-system-icons-by-dan-wiersma/Sun-icon.html -->
+				<img id = "sun" class = "sunCenter planetImg" src = "images/planets/sun_resized.png" alt = "Image of the Sun - Stationary" width = "60" height = "60" />
+				<!-- Earth Image: http://xenosaga.wikia.com/wiki/File:Earth.png -->
+				<img id = "earth" class = "earthCenter planetImg" src = "images/planets/earth_resized.png" alt = "Image of the Earth - In orbit around the Sun" width = "15" height = "15" />
+				<!-- Mercury Image: http://www.heywhatsthat.com/images/planets/1000/mercury.png -->
+				<img id = "mercury" class = "mercuryCenter planetImg" src = "images/planets/mercury_resized.png" alt = "Image of Mercury - In orbit around the Sun" width = "5" height = "5" />
+				<!-- Venus Image: http://ciera.northwestern.edu/news/news_2011-2012.php -->
+				<img id = "venus" class = "venusCenter planetImg" src = "images/planets/venus_resized.png" alt = "Image of Venus - In orbit around the Sun" width = "14" height = "14" />
+				<!-- Mars Image: http://www.macweb.sk/preskumajte-planetu-mars-so-svojim-iphonom/mars/ -->
+				<img id = "mars" class = "marsCenter planetImg" src = "images/planets/mars_resized.png" alt = "Image of Mars - In orbit around the Sun" width = "8" height = "8" />
+				<!-- Jupiter Image: http://commons.wikimedia.org/wiki/File:Jupiter.png -->
+				<img id = "jupiter" class = "jupiterCenter planetImg" src = "images/planets/jupiter_resized.png" alt = "Image of Jupiter - In orbit around the Sun" width = "28" height = "28" />
+				<!-- Saturn Image: http://spaceplace.nasa.gov/ -->
+				<img id = "saturn" class = "saturnCenter planetImg" src = "images/planets/saturn_resized.png" alt = "Image of Saturn - In orbit around the Sun" width = "23" height = "23" />
+				<!-- Uranus Image: http://jalilmajullifeisart.blogspot.com.au/2012/06/after-effects-composition.html -->
+				<img id = "uranus" class = "uranusCenter planetImg" src = "images/planets/uranus_resized.png" alt = "Image of Uranus - In orbit around the Sun" width = "18" height = "18" />
+				<!-- Neptune Image: http://s803.photobucket.com/user/krmitchell13/media/planet%20pictures/neptune.png.html -->
+				<img id = "neptune" class = "neptuneCenter planetImg" src = "images/planets/neptune_resized.png" alt = "Image of Neptune - In orbit around the Sun" width = "16" height = "16" />
+			
+				<section class = "contentPanel">
+					<!-- REFERENCE: http://www.space.com/58-the-sun-formation-facts-and-characteristics.html -->
+					<article class = "panel" id = "sunPanel">The sun lies at the heart of the solar system, where it is by far the largest object. It holds 99.8 percent of the solar system's mass and is roughly 109 times the diameter of the Earth — about one million Earths could fit inside the sun. The visible part of the sun is roughly 10,000 degrees F (5,500 degrees C), while temperatures in the core reach more than 27 million degrees F (15 million degrees C), driven by nuclear reactions.</article>
+					<!-- REFERENCE: http://www.space.com/36-mercury-the-suns-closest-planetary-neighbor.html -->
+					<!-- REFERENCE: http://www.universetoday.com/14009/orbit-of-mercury/ -->
+					<article class = "panel" id = "mercuryPanel">Mercury is the closest planet to the sun. As such, it circles the sun faster than all the other planets, which is why Romans named it after the swift-footed messenger god Mercury. The orbit of Mercury is the most eccentric of the planets in our Solar System. The planet has an orbital period of 87.969 Earth days. </article>
+					<!-- REFERENCE: http://www.space.com/44-venus-second-planet-from-the-sun-brightest-planet-in-solar-system.html -->
+					<!-- REFERENCE: http://www.universetoday.com/14347/orbit-of-venus/ -->
+					<article class = "panel" id = "venusPanel">Venus and Earth are often called twins because they are similar in size, mass, density, composition and gravity. However, the similarities end there. Venus is the hottest world in the solar system. The orbit of Venus is the most circular in the entire Solar System. In mathematical terms, the eccentricity of Venus is less than 0.01. A year on Venus lasts 223 days.</article>
+					<!-- REFERENCE: http://www.universetoday.com/61202/earths-orbit-around-the-sun/ -->
+					<article class = "panel" id = "earthPanel">The Earth’s orbit around the Sun has many interesting characteristics. First, the speed of our orbit is 108,000 km/h. The planet travels 940 million km during one orbit. The Earth completes one orbit every 365.242199 mean solar days(that might help explain the need for a leap year). The planet’s distance from the Sun varies as it orbits. Actually, the Earth is never the same distance from the Sun from day to day.</article>
+					<!-- REFERENCE: http://www.universetoday.com/14828/orbit-of-mars/ -->
+					<article class = "panel" id = "marsPanel">The orbit of Mars is the second most eccentric in the Solar System. Only Mercury’s orbit is more eccentric. It takes Mars approximately 687 Earth days to complete on orbit. The orbit of a planet varies in relation to the gravitational influences of the bodies around it, so the eccentricity can change over time. AS recently as 1.35 million years ago, Mars was in a nearly circular orbit.</article>
+					<!-- REFERENCE: http://www.universetoday.com/15113/orbit-of-jupiter/ -->
+					<article class = "panel" id = "jupiterPanel">The orbit of Jupiter, like that of all the planets, is really elliptical instead of circular. At perihelion(closest approach) Jupiter comes within 741 million km, or 4.95 astronomical units(AU), of the Sun. Jupiter is the fifth planet from the Sun, but it is the third brightest object in the night sky here on Earth. Jupiter takes 11.86 Earth years, or 4331 Earth days to complete one orbit.</article>
+					<!-- REFERENCE: http://www.universetoday.com/24168/orbit-of-saturn/ -->
+					<article class = "panel" id = "saturnPanel">The orbit of Saturn lasts 29.7 years. In other words, during the time Saturn completes one full revolution around the Sun, Earth has gone through almost 30 years. The closest point of Saturn’s orbit is called its perihelion. At this point, Saturn is only 1.353 billion km or 9 astronomical units from the Sun (1 AU is the average distance from the Earth to the Sun).</article>
+					<!-- REFERENCE: http://www.universetoday.com/19105/orbit-of-uranus/ -->
+					<article class = "panel" id = "uranusPanel">The orbit of Uranus takes 84.3 year to complete one revolution around the Sun. In other words, 1 Uranian year is 84.3 Earth years. Uranus is unique among the planets in the Solar System because of its axial tilt. While Earth is tilted at a mere 23.5 degrees, Uranus has rolled over completely sideways, with an axial tilt of 99-degrees. This has a significant impact on the planet’s seasons. The north pole of Uranus experiences 42 years of complete darkness, followed by 42 years of sunlight, where the Sun never dips below in the horizon.</article>
+					<!-- REFERENCE: http://www.universetoday.com/22054/neptunes-orbit/ -->
+					<article class = "panel" id = "neptunePanel">Neptune orbits the Sun at an average distance of 4.5 billion km. One interesting feature about the orbit of Neptune is the fact that Pluto’s very elliptical orbit sometimes brings it closer to the Sun. Back in the days when Pluto was still a planet, it would spend a few decades every orbit closer to the Sun. So Neptune was actually the most distant planet, and Pluto was closer. The last time this happened started in 1979, and ended in 1999. Of course, Pluto isn’t a planet any more, so Neptune’s orbit makes it the most distant planet.</article>
+				</section>
+			</div>
+			<!-- End Solar Oribt -->
+		</article>
+		
+		</div>
+		
+	<!-- Footer -->
+		<footer class = "footer">
+			<div class = "mapHolder inline">
+				<div class = "mapHeading">Sitemap</div>
+				<a href = "index.html"><div class = "mapHome">Homepage</div></a>
+				<a href = "solarsystem.html"><div class = "map">Solar System</div></a>
+				<a href = "orbit.html"><div class = "map">Solar Orbit</div></a>
+				<a href = "gallery.html"><div class = "map">Gallery</div></a>
+			</div>
+			<div class = "inline copyrightHolder">
+				<div class = "disclaimer">This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+				</div>
+				<div class = "nameHolder">
+					<div class = "copyright"><br/>&copy; Michael Baggott 2014</div>
+				</div>
+			</div>
+		</footer>
+	<!-- End Footer -->
+	
+	</div>
+	
+	</body>
+
+</html>
